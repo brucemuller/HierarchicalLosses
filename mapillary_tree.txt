@@ -1,0 +1,80 @@
+animal
+	bird
+	ground-animal
+construction
+	barrier
+		curb
+		fence
+		guard-rail
+		other-barrier
+		wall
+	flat
+		bike-lane
+		crosswalk-plain
+		curb-cut
+		parking
+		pedestrian-area
+		rail-track
+		road
+		service-lane
+		sidewalk
+	structure
+		bridge
+		building
+		tunnel
+human
+	person
+	rider
+		bicyclist
+		motorcyclist
+		other-rider
+marking
+	crosswalk-zebra
+	general
+nature
+	mountain
+	sand
+	sky
+	snow
+	terrain
+	vegetation
+	water
+object
+	banner
+	bench
+	bike-rack
+	billboard
+	catch-basin
+	cctv-camera
+	fire-hydrant
+	junction-box
+	mailbox
+	manhole
+	phone-booth
+	pothole
+	street-light
+	traffic-light
+	trash-can
+	support
+		pole
+		traffic-sign-frame
+		utility-pole
+	traffic-sign
+		back
+		front
+	vehicle
+		bicycle
+		boat
+		bus
+		car
+		caravan
+		motorcycle
+		on-rails
+		other-vehicle
+		trailer
+		truck
+		wheeled-slow
+void
+	car-mount
+	ego-vehicle
+	unlabeled

@@ -1,0 +1,63 @@
+model:
+    arch: unet
+data:
+    dataset: vistas
+    train_split: training
+    val_split: validation
+    img_rows: 256
+    img_cols: 256
+    path: /home/brm512/datasets/vistas_v1.1/
+    server_path: /shared/storage/cs/staffstore/brm512/data/segmentation/vistas_v1.1/
+    viking: True
+    viking_path: /users/brm512/scratch/data/segmentation/vistas_v1.1/
+training:
+    save_model: True
+    augmentations:
+        rcropfixed: None
+      #  rscale: None
+        hflip: 0.5
+    visdom: False
+    matplotlib: True
+    use_tree_loss: True
+    use_hierarchy: True
+    extra_metrics: False
+    epochs: 200
+    train_iters: 90000000000000
+    batch_size: 5
+    val_interval: 900000000000000000
+    n_workers: 3
+    print_interval: 20
+    time_analysis: False
+    optimizer:
+        name: 'sgd'
+        lr: 0.01
+       # weight_decay: 0.001
+        #momentum: 0.9
+        #nesterov: True
+    loss:
+        name: 'tree_loss'
+       # name: 'cross_entropy'
+    #    name: 'tree_loss_leveldirect'
+      # name: 'phased_tree_loss'
+      #  name: 'phased_tree_loss_dynamic'
+    phased: False
+    lr_schedule:
+    resume:
+    ##resume: /home/brm512/Pytorch/meetshah-semseg/server_runs/67838/unet_faces_epoch_300_model.pkl
+    resume1: #/shared/storage/cs/staffstore/brm512/experiments/hier_semseg/saved_models/67838/unet_faces_epoch_300_model.pkl # nontree
+    resume2: #/shared/storage/cs/staffstore/brm512/experiments/hier_semseg/saved_models/94212/unet_faces_epoch_300_model.pkl # tree
+#/scratch/staff/brm512/results/hier_semseg/runs/mapillary/8930/deepresunet_vistas_epoch_24_model.pkl
+#/scratch/staff/brm512/results/hier_semseg/runs/mapillary/8930/deepresunet_vistas_epoch_24_model.pkl
+#/scratch/staff/brm512/experiments/hier_semseg/runs/mapillary/5780/unet_vistas_epoch_34_model.pkl
+#/scratch/staff/brm512/results/hier_semseg/runs/mapillary/25499/segnet_vistas_epoch_12_model.pkl
+#/local/data/bruce/experiments/hier_semseg/runs/fcn8s_pascal/11898/segnet_vistas_epoch_24_model.pkl
+vis:
+    visdom: False
+    matplotlib: True
+    model_path0: /home/brm512/Pytorch/meetshah-semseg/server_runs/70777/unet_faces_epoch_60_model_nontree.pkl # 99082 not-tree with rscale with tree_loss
+    model_path1: /home/brm512/Pytorch/meetshah-semseg/server_runs/70777/unet_faces_epoch_60_model_tree.pkl # 94212 tree with rscale
+    model_path2: /home/brm512/Pytorch/meetshah-semseg/server_runs/909/unet_vistas_epoch_200_model.pkl   # no tree baseline
+    model_path3: /home/brm512/Pytorch/meetshah-semseg/server_runs/65082/unet_vistas_epoch_178_model.pkl
+    extra_metrics: False 
+#/home/brm512/Pytorch/meetshah-semseg/server_runs/30729/unet_vistas_epoch_182_model.pkl
+#/home/brm512/Pytorch/meetshah-semseg/server_runs/94369/unet_vistas_epoch_182_model.pkl

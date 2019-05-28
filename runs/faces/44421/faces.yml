@@ -1,0 +1,42 @@
+model:
+    arch: unet
+data:
+    dataset: faces
+    train_split: training
+    val_split: validation
+    img_rows: 64
+    img_cols: 64
+    path: /home/brm512/datasets/faces_newsplit/
+    server_path: 
+    viking: 
+    viking_path: 
+training:
+    save_model: True
+    augmentations:
+        rcropfixed: None
+      #  rscale: None
+      #  hflip: 0.5
+    visdom: False
+    matplotlib: True
+    use_tree_loss: True
+    use_hierarchy: True
+    epochs: 1000
+    train_iters: 999999
+    batch_size: 2
+    val_interval: 2
+    n_workers: 0
+    print_interval: 2
+    time_analysis: False
+    optimizer:
+        name: 'sgd'
+        lr: 0.01
+       # weight_decay: 0.001
+        #momentum: 0.9
+        #nesterov: True
+    loss:
+        name: 'tree_loss'
+    phased: False
+    lr_schedule:
+    resume:
+    resume1:  
+    resume2:

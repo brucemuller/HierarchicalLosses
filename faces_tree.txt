@@ -1,0 +1,17 @@
+background
+foreground
+	hair
+	face
+		mouth
+			upper_lip
+			inner_mouth
+			lower_lip
+		skin
+			face_skin
+			nose
+		eyes
+			left_eye
+			right_eye
+		eyebrows
+			left_eyebrow
+			right_eyebrow

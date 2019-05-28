@@ -1,0 +1,22 @@
+2019-05-28 09:59:13,279 INFO Let the games begin
+2019-05-28 09:59:13,279 INFO Using rcropfixed aug with params None
+2019-05-28 09:59:13,817 INFO Using sgd optimizer
+2019-05-28 09:59:13,817 INFO Using non tree optimizer SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0
+)
+2019-05-28 09:59:13,817 INFO Using sgd optimizer
+2019-05-28 09:59:13,818 INFO Using non tree optimizer SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0
+)
+2019-05-28 09:59:13,818 INFO Using tree_loss with {} params
+2019-05-28 09:59:13,818 INFO Using loss functools.partial(<function tree_loss at 0x7fba0d6799d8>)

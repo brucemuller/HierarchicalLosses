@@ -1,0 +1,27 @@
+2019-05-28 11:12:42,378 INFO Let the games begin
+2019-05-28 11:12:42,381 INFO Using rcropfixed aug with params None
+2019-05-28 11:12:43,197 INFO Using sgd optimizer
+2019-05-28 11:12:43,198 INFO Using non tree optimizer SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0
+)
+2019-05-28 11:12:43,198 INFO Using sgd optimizer
+2019-05-28 11:12:43,199 INFO Using non tree optimizer SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0
+)
+2019-05-28 11:12:43,200 INFO Using tree_loss with {} params
+2019-05-28 11:12:43,200 INFO Using loss functools.partial(<function tree_loss at 0x7fce6a225950>)
+2019-05-28 11:12:48,637 INFO Epoch [1/1000] Iter [2/1000] IterNonTreeLoss: 2.4171  IterTreeLoss: 7.9402  Time/Image: 1.3381
+2019-05-28 11:12:54,368 INFO Epoch [1/1000] Iter [4/1000] IterNonTreeLoss: 2.4105  IterTreeLoss: 8.5955  Time/Image: 1.4221
+2019-05-28 11:13:01,534 INFO Epoch [1/1000] Iter [6/1000] IterNonTreeLoss: 2.3849  IterTreeLoss: 8.4627  Time/Image: 1.7809
+2019-05-28 11:13:09,187 INFO Epoch [1/1000] Iter [8/1000] IterNonTreeLoss: 2.3574  IterTreeLoss: 7.7521  Time/Image: 1.8977
+2019-05-28 11:13:16,406 INFO Epoch [1/1000] Iter [10/1000] IterNonTreeLoss: 2.3553  IterTreeLoss: 7.0381  Time/Image: 1.7920

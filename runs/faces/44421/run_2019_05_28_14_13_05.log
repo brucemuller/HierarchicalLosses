@@ -1,0 +1,27 @@
+2019-05-28 14:13:05,398 INFO Using rcropfixed aug with params None
+2019-05-28 14:13:06,461 INFO Using sgd optimizer
+2019-05-28 14:13:06,461 INFO Using non tree optimizer SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0
+)
+2019-05-28 14:13:06,462 INFO Using sgd optimizer
+2019-05-28 14:13:06,462 INFO Using non tree optimizer SGD (
+Parameter Group 0
+    dampening: 0
+    lr: 0.01
+    momentum: 0
+    nesterov: False
+    weight_decay: 0
+)
+2019-05-28 14:13:06,462 INFO Using tree_loss with {} params
+2019-05-28 14:13:06,462 INFO Using loss functools.partial(<function tree_loss at 0x7fe99e7026a8>)
+2019-05-28 14:13:13,697 INFO Epoch [1/1000] Iter [2/1000] IterNonTreeLoss: 2.4171  IterTreeLoss: 7.9402  Time/Image: 1.7769
+2019-05-28 14:13:13,698 INFO Using rcropfixed aug with params None
+2019-05-28 14:13:24,939 INFO Epoch [1/1000] Iter [4/1000] IterNonTreeLoss: 2.4103  IterTreeLoss: 8.5998  Time/Image: 2.2484
+2019-05-28 14:13:24,940 INFO Using rcropfixed aug with params None
+2019-05-28 14:13:36,542 INFO Epoch [1/1000] Iter [6/1000] IterNonTreeLoss: 2.3835  IterTreeLoss: 8.4458  Time/Image: 2.2504
+2019-05-28 14:13:36,543 INFO Using rcropfixed aug with params None
