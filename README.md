@@ -19,26 +19,25 @@ In this paper we exploit knowledge of class hierarchies to aid the training of s
 ![treelists](imgs/treelists.png)
 
 
-### Results/Conclusions
+### Results
 
 ![helencurves](imgs/helenlearningcurves.png)
 
-* Our experiments use the Helen facial dataset (http://www.ifp.illinois.edu/~vuongle2/helen/ and http://pages.cs.wisc.edu/~lizhang/projects/face-parsing/) and the Mapillary Vistas road scene dataset (https://www.mapillary.com/dataset/vistas?pKey=aFWuj_m4nGoq3-tDz5KAqQ&lat=20&lng=0&z=1.5).
+* Our research illustrates the great potential and merit of using losses that encourage semantically similar classes within a hierarchy to be classified close together, where the model parameters are guided towards a solution not only better quantitatively, but faster in training than using a standard loss implementation.
 
-* Hierarchically trained is significantly benefiting from the hierarchical structure in the semantic class labels, particularly in the early phase of training, learning much faster than the vanilla model. This is shown in the above figure (left) where the losses for each hierarchical level outperforms and accelerates significantly initially.
+* Our hierarchically trained model is significantly benefiting from the hierarchical structure in the semantic class labels, particularly in the early phase of training, learning much faster than the vanilla model. This is shown in the above figure (left) where the losses for each hierarchical level outperforms and accelerates significantly initially.
+
+* Any hierarchical structure can be provided to help train your model.
 
 * Note that the deeper loss for finer classes is always larger than a shallower one as it's the more difficult task.
-
 
 * The above figure (right) also displays mean IOU during training. Performance gain is most significant around epoch 50 and can be observed in the qualitative results from the below figure.
 
 * Similar improvements are shown for the much more challenging Vistas road scene dataset where the number of classes is 64 more than Helen (see paper).
 
-* Our research illustrate the great potential and merit of using losses that encourage semantically similar classes within a hierarchy to be classified close together, where the model parameters are guided towards a solution not only better quantitatively, but faster in training than using a standard loss implementation.
-
-* Any hierarchical structure can be provided to help train your model.
-
 * We also contribute a numerically stable formulation for computing log and softmax of a network output separately, a necessity for summing probabilities according to a hierarchical structure.
+
+* Our experiments use the Helen facial dataset (http://www.ifp.illinois.edu/~vuongle2/helen/ and http://pages.cs.wisc.edu/~lizhang/projects/face-parsing/) and the Mapillary Vistas road scene dataset (https://www.mapillary.com/dataset/vistas?pKey=aFWuj_m4nGoq3-tDz5KAqQ&lat=20&lng=0&z=1.5).
 
 ![helenpreds](imgs/helenpreds.png)
 
