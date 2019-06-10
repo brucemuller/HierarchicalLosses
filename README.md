@@ -1,4 +1,4 @@
-[Hierarchical Losses For Semantic Segmentation](https://arxiv.org/) - [Bruce Muller](https://www.cs.york.ac.uk/cvpr/member/bruce/) and [Will Smith](Whttps://www.cs.york.ac.uk/cvpr/member/will/)
+[Hierarchical Losses For Semantic Segmentation](https://arxiv.org/) - [Bruce Muller](https://www.cs.york.ac.uk/cvpr/member/bruce/) and [Will Smith](https://www.cs.york.ac.uk/cvpr/member/will/)
 
 ### Abstract
 
@@ -13,6 +13,8 @@ In this paper we exploit knowledge of class hierarchies to aid the training of s
 * Given the output of any semantic segmentation architecture and a class hierarchy, we compute losses for each level of abstraction within the hierarchy, inferring probabilities of super-classes from their children (see above figure).
 
 * A particular advantage of this work is its generality and self-contained nature allows the possibility of plugging this hierarchical loss on the end of any deep learning architecture.
+
+* We provide the simple to use hierarchical loss function within loss.py.
 
 * Class hierarchies are defined with a simple tab delimited text file (figure below, left).
 
