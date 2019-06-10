@@ -1,3 +1,5 @@
+[Hierarchical Losses For Semantic Segmentation](https://arxiv.org/) - [Bruce Muller](https://www.cs.york.ac.uk/cvpr/member/bruce/) and [Will Smith](Whttps://www.cs.york.ac.uk/cvpr/member/will/)
+
 ### Abstract
 
 In this paper we exploit knowledge of class hierarchies to aid the training of semantic segmentation convolutional neural networks. We do not modify the architecture of the network itself, but rather propose to compute a loss that is a summation of classification losses at different levels of class abstraction. This allows the network to differentiate serious errors (the wrong superclass) from minor errors (correct superclass but incorrect finescale class) and to learn visual features that are shared between classes that belong to the same superclass. The method is straightforward to implement (we provide a PyTorch implementation that can be used with any existing semantic segmentation network) and we show that it yields performance improvements (faster convergence, better mean IOU) relative to training with a flat class hierarchy and exactly the same CNN architecture. We provide results for the Helen face segmentation dataset and Mapillary Vistas road scene segmentation dataset.
@@ -45,9 +47,8 @@ In this paper we exploit knowledge of class hierarchies to aid the training of s
 ### Try It Yourself
 
 
-
+* Implemented in PyTorch 1.0.0. We used Anaconda 5.2.0 and CUDA 9.0.176. 
 * Provide your own intuitive hierarchy unique to your own data (see faces_tree.txt for an example).
-* We used Anaconda 5.2.0 and CUDA 9.0.176 
 * For semantic segmentation your data should usually be integer values for the classes. Note you may need to correct your hierarchical representation within training to hold the correct channels (see train.py). See data loaders for examples of loading and transforming data.
 * We leave visualisation of data and checkpointing to your own preferences.
 * Currently you need to set variables to using the number of levels you have in your hierarchy (we plan to make it generalised later).
