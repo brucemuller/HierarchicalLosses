@@ -1,4 +1,4 @@
-[Hierarchical Losses For Semantic Segmentation](https://arxiv.org/) - [Bruce Muller](https://www.cs.york.ac.uk/cvpr/member/bruce/) and [Will Smith](https://www.cs.york.ac.uk/cvpr/member/will/)
+[Hierarchical Losses For Semantic Segmentation (under review)](https://arxiv.org/) - [Bruce Muller](https://www.cs.york.ac.uk/cvpr/member/bruce/) and [William Smith](https://www.cs.york.ac.uk/cvpr/member/will/)
 
 ### Abstract
 
