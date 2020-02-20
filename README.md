@@ -8,7 +8,7 @@ We exploit knowledge of class hierarchies to aid the training of semantic segmen
 
 ### Plug and Play Hierarchical Loss for More Robust Models
 
-* In traditional semantic segmentation a minor error (correct superclass but incorrect finescale class) is penalised just as much as a major mistake (incorrect superclass). For example mistaking a truck for a car isn't too serious for some applications, though mistaking a truck for the sky could be dangerous.
+* In traditional semantic segmentation a minor error (correct superclass but incorrect finescale class) is penalised just as much as a major error (incorrect superclass). For example mistaking a truck for a car isn't too serious for some applications, though mistaking a truck for the sky could be dangerous.
 
 * That's why is makes sense to build representations which are robust to a class hierarchy given from the beginning of training a model rather than relying on automatic encoding.
 
