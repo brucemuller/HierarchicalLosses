@@ -54,15 +54,17 @@ Note: Vanilla (U-Net) and hierarchically trained models (U-Net+HL) receive ident
 
 ### Try It Yourself
 
+* The main things you need are:
+  * The hierarchical loss function (see hierarchical_loss.py) which you are free to augment into your own process.
+  * Some way of translating the indented text file into a of integers for input to this loss function. We used some general python which you could use too (see ptsemseg/tree.py).
 
 * Implemented in PyTorch 1.0.0. We used Anaconda 5.2.0 and CUDA 9.0.176. 
 * Provide your own intuitive hierarchy unique to your own data (see faces_tree.txt for an example).
-* For semantic segmentation your data should usually be integer values for the classes. Note you may need to correct your hierarchical representation within training to hold the correct channels (see train.py). See data loaders for examples of loading and transforming data.
-* We leave visualisation of data and checkpointing to your own preferences.
-* Currently you need to set variables to using the number of levels you have in your hierarchy (we plan to make it generalised later).
-* We used U-Net for a simple model for comparison purposes but you are free to use your own (set in the config file).
-* Use the config file to set hyper parameters, augmentations, data location etc (see here for some usage: https://github.com/meetshah1995/pytorch-semseg).
-* Basic metrics are provided with this code (see acknowledgements).
+* For semantic segmentation your data should usually be integer values for the classes. 
+
+* Note you may need to correct your hierarchical representation within training to hold the correct channels (see train.py the class_lookup list and update_channels function (in ptsemseg/tree.py)): 
+
+* We used U-Net for a simple model for comparison purposes but you are free to use your own.
 
 
 ### Acknowledgements
