@@ -1,4 +1,4 @@
-[A Hierarchical Loss For Semantic Segmentation (VISAPP 2020)](https://arxiv.org/) - [Bruce Muller](https://www.cs.york.ac.uk/cvpr/member/bruce/) and [William Smith](https://www.cs.york.ac.uk/cvpr/member/will/)
+[A Hierarchical Loss For Semantic Segmentation (VISAPP 2020)](http://www.visapp.visigrapp.org/) - [Bruce Muller](https://www.cs.york.ac.uk/cvpr/member/bruce/) and [William Smith](https://www.cs.york.ac.uk/cvpr/member/will/)
 
 ### Abstract
 
@@ -50,6 +50,7 @@ Note: Vanilla (U-Net) and hierarchically trained models (U-Net+HL) receive ident
 * Our experiments use the Helen facial dataset (http://www.ifp.illinois.edu/~vuongle2/helen/ and http://pages.cs.wisc.edu/~lizhang/projects/face-parsing/) and the Mapillary Vistas road scene dataset (https://www.mapillary.com/dataset/vistas?pKey=aFWuj_m4nGoq3-tDz5KAqQ&lat=20&lng=0&z=1.5).
 
 ![helenpreds](imgs/helenpreds.png)
+![vistaspreds](imgs/vistaspreds.png)
 
 
 ### Try It Yourself
