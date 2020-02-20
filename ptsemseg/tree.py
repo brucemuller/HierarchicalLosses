@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 
-# Code base for representing hierarchies/trees for paper Hierarchical Losses for Semantic Segmentation (BMVC 2019 submission).
+# Code base for representing hierarchies/trees for paper Hierarchical Losses for Semantic Segmentation.
 
 @author: Bruce Muller (brm512@york.ac.uk) and William Smith (william.smith@york.ac.uk)
 """
