@@ -25,8 +25,7 @@ We exploit knowledge of class hierarchies to aid the training of semantic segmen
 
 ### Results
 
-![heleniou](imgs/unet_faces_meanIoU-1.png) ![helenloss](imgs/unet_faces_levellosses-1.png)
-![vistasiou](imgs/unet_vistas_meanIoU-1.png) ![vistasiou](imgs/unet_vistas_levellosses-1.png)
+<img src="https://user-images.githubusercontent.com/48244902/74934658-9ec86600-53de-11ea-955f-ca04609164c7.png" width="23%"></img><img src="https://user-images.githubusercontent.com/48244902/74934659-9ff99300-53de-11ea-80f1-82715f323526.png" width="23%"></img><img src="https://user-images.githubusercontent.com/48244902/74934660-9ff99300-53de-11ea-8001-fbb28c5af672.png" width="23%"></img><img src="https://user-images.githubusercontent.com/48244902/74934661-a0922980-53de-11ea-8b28-f1f0ffa4d710.png" width="23%"></img>
 
 * Our research illustrates the great potential and merit of using losses that encourage semantically similar classes within a hierarchy to be classified close together, where the model parameters are guided towards a solution not only better quantitatively, but faster in training than using a standard loss implementation.
 
