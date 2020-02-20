@@ -270,17 +270,7 @@ if __name__ == "__main__":
     run_id = random.randint(1,100000)
     if torch.cuda.is_available(): 
         #SHARED
-        #logdir = os.path.join('/shared/storage/cs/staffstore/brm512/experiments/hier_semseg/runs', os.path.basename(args.config)[:-4] , str(run_id))
-        #PC062
-        #logdir = os.path.join('/local/data/bruce/experiments/hier_semseg/runs', os.path.basename(args.config)[:-4] , str(run_id))
-        #CSGPU1
-        logdir = os.path.join('/scratch/staff/brm512/results/hier_semseg/runs', os.path.basename(args.config)[:-4] , str(run_id))
-        #CSGPU2
-       # logdir = os.path.join('/scratch/staff/brm512/experiments/hier_semseg/runs', os.path.basename(args.config)[:-4] , str(run_id))
-        #CSGPU3
-        #logdir = os.path.join('/local/hdd4tb/shared/brm512/runs', os.path.basename(args.config)[:-4] , str(run_id))
-        #VIKING
-        #logdir = os.path.join('/mnt/lustre/users/brm512/experiments/results/hier_semseg/runs', os.path.basename(args.config)[:-4] , str(run_id))
+       
     else:
         logdir = os.path.join('runs', os.path.basename(args.config)[:-4] , str(run_id))
     writer = SummaryWriter(log_dir=logdir)
