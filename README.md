@@ -72,6 +72,10 @@ Note: Vanilla (U-Net) and hierarchically trained models (U-Net+HL) receive ident
 
 We would like to thank Meet Shah (https://github.com/meetshah1995/pytorch-semseg) and the contributors there for the great semantic segmentation code base with data loading, model and metric support.
 
+### Reference
+
+Muller, B.R., Smith, W.A.P., 2020. A Hierarchical Loss for Semantic Segmentation. In Proceedings of the 15th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications VISAPP 2020. SCITEPRESS.
+
 Please feel free to get in touch if your are interested in our research! (brm512@york.ac.uk)
 
 
