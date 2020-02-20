@@ -25,17 +25,17 @@ We exploit knowledge of class hierarchies to aid the training of semantic segmen
 
 ### Results
 
-<img src="https://user-images.githubusercontent.com/48244902/74934658-9ec86600-53de-11ea-955f-ca04609164c7.png" width="23%"></img><img src="https://user-images.githubusercontent.com/48244902/74934659-9ff99300-53de-11ea-80f1-82715f323526.png" width="23%"></img><img src="https://user-images.githubusercontent.com/48244902/74934660-9ff99300-53de-11ea-8001-fbb28c5af672.png" width="23%"></img><img src="https://user-images.githubusercontent.com/48244902/74934661-a0922980-53de-11ea-8b28-f1f0ffa4d710.png" width="23%"></img>
+<img src="https://user-images.githubusercontent.com/48244902/74934658-9ec86600-53de-11ea-955f-ca04609164c7.png "TEST"" width="45%"></img> <img src="https://user-images.githubusercontent.com/48244902/74934659-9ff99300-53de-11ea-80f1-82715f323526.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/48244902/74934660-9ff99300-53de-11ea-8001-fbb28c5af672.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/48244902/74934661-a0922980-53de-11ea-8b28-f1f0ffa4d710.png" width="45%"></img> 
 
-* Our research illustrates the great potential and merit of using losses that encourage semantically similar classes within a hierarchy to be classified close together, where the model parameters are guided towards a solution not only better quantitatively, but faster in training than using a standard loss implementation.
+* Our research illustrates the potential of using losses that encourage semantically similar classes within a hierarchy to be classified close together, where the model parameters are guided towards a solution not only better quantitatively, but faster in training than using a standard loss implementation.
 
-* Our hierarchically trained model is significantly benefiting from the hierarchical structure in the semantic class labels, particularly in the early phase of training, learning much faster than the vanilla model. This is shown in the above figure (left) where the losses for each hierarchical level outperforms and accelerates significantly initially.
+* Our hierarchically trained model is significantly benefiting from the hierarchical structure in the semantic class labels, particularly in the early phase of training, learning much faster than the vanilla model. This is shown in the above figures (left) where the losses for each hierarchical level outperforms and accelerates significantly initially.
 
 * Any hierarchical structure can be provided to help train your model.
 
 * Note that the deeper loss for finer classes is always larger than a shallower one as it's the more difficult task.
 
-* The above figure (right) also displays mean IOU during training. Performance gain is most significant around epoch 50 and can be observed in the qualitative results from the below figure.
+* The above figures (right) also displays mean IOU during training. Performance gain is most significant around epoch 50 and can be observed in the qualitative results from the below figure.
 
 * Similar improvements are shown for the much more challenging Vistas road scene dataset where the number of classes is 64 more than Helen (see paper).
 
