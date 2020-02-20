@@ -1,12 +1,12 @@
 [A Hierarchical Loss For Semantic Segmentation (VISAPP 2020)](http://www.visapp.visigrapp.org/) - [Bruce Muller](https://www.cs.york.ac.uk/cvpr/member/bruce/) and [William Smith](https://www.cs.york.ac.uk/cvpr/member/will/)
 
-### Abstract
+### Abstract: Differentiate Serious Errors from Minor Errors
 
 We exploit knowledge of class hierarchies to aid the training of semantic segmentation convolutional neural networks. We do not modify the architecture of the network itself, but rather propose to compute a loss that is a summation of classification losses at different levels of class abstraction. This allows the network to differentiate serious errors (the wrong superclass) from minor errors (correct superclass but incorrect finescale class) and to learn visual features that are shared between classes that belong to the same superclass. The method is straightforward to implement (we provide a PyTorch implementation that can be used with any existing semantic segmentation network) and we show that it yields performance improvements (faster convergence, better mean Intersection over Union) relative to training with a flat class hierarchy and the same network architecture. We provide results for the Helen facial and Mapillary Vistas road-scene segmentation datasets.
 
 ![HSS_overview](imgs/HSSOverview.png)
 
-### Plug and Play Hierarchical Loss
+### Plug and Play Hierarchical Loss for More Robust Models
 
 * In traditional semantic segmentation a minor error (correct superclass but incorrect finescale class) is penalised just as much as a major mistake (incorrect superclass). For example mistaking a truck for a car isn't too serious for some applications, though mistaking a truck for the sky could be dangerous.
 
@@ -14,7 +14,7 @@ We exploit knowledge of class hierarchies to aid the training of semantic segmen
 
 * We speculate that the hierarchically trained models perform better due to learning more robust features from visually similar classes which are close within the hierarchy and are much less prone to making a potentially dangerous mistake.
 
-* Our idea is to use the hierarchical structure in the semantics of classes to improve a deep model by a simple Hierarchical Loss Function.
+* Our idea is to use the hierarchical structure in the semantics of classes to improve a deep model by a simple Hierarchical Loss Function. Differentiate serious errors from minor errors!
 
 * Given the output of any semantic segmentation architecture and a class hierarchy, we compute losses for each level of abstraction within the hierarchy, inferring probabilities of super-classes from their children (see above figure).
 
@@ -29,7 +29,7 @@ We exploit knowledge of class hierarchies to aid the training of semantic segmen
 ![treelists](imgs/treelists.png)
 
 
-### Results
+### Results: Train Faster and Boost Performance with Class Hierarchies
 
 <img src="https://user-images.githubusercontent.com/48244902/74934658-9ec86600-53de-11ea-955f-ca04609164c7.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/48244902/74934659-9ff99300-53de-11ea-80f1-82715f323526.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/48244902/74934660-9ff99300-53de-11ea-8001-fbb28c5af672.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/48244902/74934661-a0922980-53de-11ea-8b28-f1f0ffa4d710.png" width="45%"></img> 
 
