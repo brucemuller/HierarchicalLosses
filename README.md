@@ -14,7 +14,7 @@ We exploit knowledge of class hierarchies to aid the training of semantic segmen
 
 * A particular advantage of this work is its generality and self-contained nature allows the possibility of plugging this hierarchical loss on the end of any deep learning architecture.
 
-* We provide the simple to use hierarchical loss function within loss.py.
+* We provide the simple to use hierarchical loss function within hierarchical_loss.py.
 
 * Class hierarchies are defined with a simple tab delimited text file (figure below, left).
 
