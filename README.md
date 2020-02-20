@@ -22,10 +22,11 @@ We exploit knowledge of class hierarchies to aid the training of semantic segmen
 
 * We provide the simple to use hierarchical loss function within hierarchical_loss.py (also partly shown below).
 
-* Class hierarchies are defined with a simple tab delimited text file (figure below, left).
+* Class hierarchies (e.g. top figure below) are defined with a simple tab delimited text file (figure below, middle left).
 
-* We pre-compute lists of leaf nodes (figure below, right) for each depth corresponding to the summations required for computing internal node probabilities (see below and paper for more implementation details).
+* We pre-compute lists of leaf nodes (figure below, middle right) for each depth corresponding to the summations required for computing internal node probabilities (see below and paper for more implementation details). Note that in code the classes in precomputed_hierarchy_list would be represented by unique integer values, shown here verbally for clarity.
 
+![tree](imgs/tree.png)
 ![treelists](imgs/treelists.png)
 ![code](imgs/losscode.png)
 
@@ -54,6 +55,7 @@ Note: Vanilla (U-Net) and hierarchically trained models (U-Net+HL) receive ident
 * We also contribute a numerically stable formulation for computing log and softmax of a network output separately, a necessity for summing probabilities according to a hierarchical structure.
 
 * Our experiments use the Helen facial dataset (http://www.ifp.illinois.edu/~vuongle2/helen/ and http://pages.cs.wisc.edu/~lizhang/projects/face-parsing/) and the Mapillary Vistas road scene dataset (https://www.mapillary.com/dataset/vistas?pKey=aFWuj_m4nGoq3-tDz5KAqQ&lat=20&lng=0&z=1.5).
+
 
 ![helenpreds](imgs/helenpreds.png)
 ![vistaspreds](imgs/vistaspreds.png)
