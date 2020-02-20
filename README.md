@@ -31,7 +31,7 @@ Left: Hierarchical Losses during training for vanilla (U-Net) and hierarchically
 Right: Accuracy (Intersection over Union) during training on a test set.<br/>
 Top: Helen facial dataset.<br/>
 Bottom: Mapillary Vistas road scene dataset.<br/>
-Note: Vanilla (U-Net) and hierarchically trained models (U-Net+HL) reveive identical input during training.<br/>
+Note: Vanilla (U-Net) and hierarchically trained models (U-Net+HL) receive identical input during training.<br/>
 
 * Our research illustrates the potential of using losses that encourage semantically similar classes within a hierarchy to be classified close together, where the model parameters are guided towards a solution not only better quantitatively, but faster in training than using a standard loss implementation.
 
