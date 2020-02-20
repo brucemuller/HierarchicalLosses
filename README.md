@@ -25,7 +25,8 @@ We exploit knowledge of class hierarchies to aid the training of semantic segmen
 
 ### Results
 
-![helencurves](imgs/helenlearningcurves.png)
+![heleniou](imgs/unet_faces_meanIoU.pdf) ![helenloss](imgs/unet_faces_levellosses.pdf)
+![vistasiou](imgs/unet_vistas_meanIoU.pdf) ![vistasiou](imgs/unet_vistas_levellosses.pdf)
 
 * Our research illustrates the great potential and merit of using losses that encourage semantically similar classes within a hierarchy to be classified close together, where the model parameters are guided towards a solution not only better quantitatively, but faster in training than using a standard loss implementation.
 
