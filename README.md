@@ -43,7 +43,7 @@ Note: Vanilla (U-Net) and hierarchically trained models (U-Net+HL) receive ident
 
 * The above figures (right) also displays mean IOU during training. Performance gain is most significant around epoch 50 and can be observed in the qualitative results from the below figure.
 
-* Similar improvements are shown for the much more challenging Vistas road scene dataset where the number of classes is 64 more than Helen (see paper).
+* Similar improvements are shown for the much more challenging Vistas road scene dataset where the number of classes is over 60 (see Vistas paper and the text file mapillary_tree.txt for the hierarchy we used).
 
 * We also contribute a numerically stable formulation for computing log and softmax of a network output separately, a necessity for summing probabilities according to a hierarchical structure.
 
