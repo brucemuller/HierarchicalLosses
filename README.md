@@ -8,6 +8,12 @@ We exploit knowledge of class hierarchies to aid the training of semantic segmen
 
 ### Plug and Play Hierarchical Loss
 
+* In traditional semantic segmentation a minor error (correct superclass but incorrect finescale class) is penalised just as much as a major mistake (incorrect superclass). For example mistaking a truck for a car isn't too serious for some applications, though mistaking a truck for the sky could be dangerous.
+
+* That's why is makes sense to build representations which are robust to a class hierarchy given from the beginning of training a model rather than relying on automatic encoding.
+
+* We speculate that the hierarchically trained models perform better due to learning more robust features from visually similar classes which are close within the hierarchy and are much less prone to making a potentially dangerous mistake.
+
 * Our idea is to use the hierarchical structure in the semantics of classes to improve a deep model by a simple Hierarchical Loss Function.
 
 * Given the output of any semantic segmentation architecture and a class hierarchy, we compute losses for each level of abstraction within the hierarchy, inferring probabilities of super-classes from their children (see above figure).
@@ -18,7 +24,7 @@ We exploit knowledge of class hierarchies to aid the training of semantic segmen
 
 * Class hierarchies are defined with a simple tab delimited text file (figure below, left).
 
-* We pre-compute lists of leaf nodes (figure below, right) for each depth corresponding to the summations required for computing internal node probabilities (see paper for more implementation details).
+* We pre-compute lists of leaf nodes (figure below, right) for each depth corresponding to the summations required for computing internal node probabilities (see below and paper for more implementation details).
 
 ![treelists](imgs/treelists.png)
 
