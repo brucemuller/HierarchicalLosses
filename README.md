@@ -27,12 +27,11 @@ We exploit knowledge of class hierarchies to aid the training of semantic segmen
 
 <img src="https://user-images.githubusercontent.com/48244902/74934658-9ec86600-53de-11ea-955f-ca04609164c7.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/48244902/74934659-9ff99300-53de-11ea-80f1-82715f323526.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/48244902/74934660-9ff99300-53de-11ea-8001-fbb28c5af672.png" width="45%"></img> <img src="https://user-images.githubusercontent.com/48244902/74934661-a0922980-53de-11ea-8b28-f1f0ffa4d710.png" width="45%"></img> 
 
-Left: Hierarchical Losses during training for vanilla (U-Net) and hierarchically trained models (U-Net+HL).
-
-Right: Accuracy (Intersection over Union) during training on a test set.
-Top: Helen facial dataset.
-Bottom: Mapillary Vistas road scene dataset.
-Note: Vanilla (U-Net) and hierarchically trained models (U-Net+HL) reveive identical input during training.
+Left: Hierarchical Losses during training for vanilla (U-Net) and hierarchically trained models (U-Net+HL).<br/>
+Right: Accuracy (Intersection over Union) during training on a test set.<br/>
+Top: Helen facial dataset.<br/>
+Bottom: Mapillary Vistas road scene dataset.<br/>
+Note: Vanilla (U-Net) and hierarchically trained models (U-Net+HL) reveive identical input during training.<br/>
 
 * Our research illustrates the potential of using losses that encourage semantically similar classes within a hierarchy to be classified close together, where the model parameters are guided towards a solution not only better quantitatively, but faster in training than using a standard loss implementation.
 
@@ -64,19 +63,11 @@ Note: Vanilla (U-Net) and hierarchically trained models (U-Net+HL) reveive ident
 * We used U-Net for a simple model for comparison purposes but you are free to use your own (set in the config file).
 * Use the config file to set hyper parameters, augmentations, data location etc (see here for some usage: https://github.com/meetshah1995/pytorch-semseg).
 * Basic metrics are provided with this code (see acknowledgements).
-* Dependencies:
 
 
 ### Acknowledgements
 
 We would like to thank Meet Shah (https://github.com/meetshah1995/pytorch-semseg) and the contributors there for the great semantic segmentation code base with data loading, model and metric support.
-
-
-### To Do
-
-* Re-structure code to accept any number of hierarchical levels
-
-* Add loss listing on readme
 
 Please feel free to get in touch if your are interested in our research! (brm512@york.ac.uk)
 
