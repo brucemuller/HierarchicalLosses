@@ -1,3 +1,5 @@
+# Older version of hierarchical loss
+
 import torch
 import numpy as np
 import torch.nn as nn
@@ -66,7 +68,6 @@ def tree_loss(input, target, weight=None, root=None, use_hierarchy=True):
             loss_list.append(level_loss.item())
             total_loss += level_loss
             
-    total_loss = total_loss/len(getTreeList(root)) # Take mean of level losses
     return (total_loss, loss_list)  # returning the total and list of losses at each level
 
 
