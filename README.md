@@ -24,7 +24,7 @@ We exploit knowledge of class hierarchies to aid the training of semantic segmen
 
 * Class hierarchies (e.g. top figure below) are defined with a simple tab delimited text file (figure below, middle left).
 
-* We pre-compute lists of leaf nodes (figure below, middle right) for each depth corresponding to the summations required for computing internal node probabilities (see below and paper for more implementation details). Note that in code the classes in precomputed_hierarchy_list would be represented by unique integer values, shown here verbally for clarity.
+* We pre-compute nested lists of leaf nodes (figure below, middle right) for each depth corresponding to the summations required for computing internal node probabilities (see below and paper for more implementation details). Note that in code the classes in each level_loss_list would be represented by unique integer values, shown here verbally for clarity. precomputed_hierarchy_list contains the each level_loss_list.
 
 ![tree](imgs/tree.png)
 ![treelists](imgs/treelists.png)
