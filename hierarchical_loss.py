@@ -1,12 +1,10 @@
-
-import torch
-import numpy as np
-import torch.nn as nn
 import torch.nn.functional as F
+from ptsemseg.tree import getTreeList
 
-def tree_loss(input, target, weight=None, root=None, use_hierarchy=True):    
+def hierarchical_loss(cnn_output, target, root):                 # root represents your hierarchy
     probabilities = F.softmax(cnn_output, dim = 1) ; loss = 0
 
+    precomputed_hierarchy_list = getTreeList(root) # see ptsemseg/tree.py
     for level_loss_list in precomputed_hierarchy_list
 
         probabilities_tosum = probabilities.clone()
@@ -25,7 +23,7 @@ def tree_loss(input, target, weight=None, root=None, use_hierarchy=True):
             # This duplicates probabilities for easy passing to standard loss functions such as nll_loss.
             for channel in branch:  
                 summed_probabilities[:,channel:(channel+1),:,:] = summed_tree_branch_slice
-
+                
         level_loss = F.nll_loss(log(summed_probabilities), target)
         loss = loss + level_loss
     return(loss)
