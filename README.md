@@ -1,4 +1,4 @@
-[A Hierarchical Loss For Semantic Segmentation (VISAPP 2020)](http://www.visapp.visigrapp.org/) - [Bruce Muller](https://www.cs.york.ac.uk/cvpr/member/bruce/) and [William Smith](https://www.cs.york.ac.uk/cvpr/member/will/)
+[A Hierarchical Loss For Semantic Segmentation (VISAPP 2020)](https://www.scitepress.org/PublicationsDetail.aspx?ID=FUppf9bOwAg=&t=1) - [Bruce Muller](https://www.cs.york.ac.uk/cvpr/member/bruce/) and [William Smith](https://www.cs.york.ac.uk/cvpr/member/will/)
 
 ### Abstract: Differentiate Serious Errors from Minor Errors
 
